@@ -1,16 +1,14 @@
-import "./globals.css";
+import './globals.css'
 
 export const metadata = {
-  title: "Aashish Vinay Vasala - AI Engineer Portfolio",
-  description: "AI Engineer specializing in Machine Learning, NLP, and Reinforcement Learning",
-};
+  title: 'Aashish Vinay Vasala - Portfolio',
+  description: 'AI & Machine Learning Engineer Portfolio',
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
