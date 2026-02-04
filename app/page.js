@@ -1,28 +1,25 @@
-import Navbar from '../components/Navbar' // Import the new Navbar
-import Photo from '../components/Photo'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import Experience from '../components/Experience'
-import Contact from '../components/Contact'
-import Articles from '../components/Articles'
-
+import Navbar from '@/components/Navbar';
+import Photo from '@/components/Photo';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import Articles from '@/components/Articles';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
-    <main>
-      <Navbar /> {/* Now sticky and persistent */}
-      <Photo />
-      <About />
-      <Skills />
-      <Projects />
-      <Articles />
-      <Experience />
-      <Contact />
-
-      <footer className="bg-gray-800 text-white text-center py-8">
-        <p>&copy;2026 Aashish Vinay Vasala. All rights reserved.</p>
-      </footer>
-    </main>
-  )
+    <div className="min-h-screen bg-white dark:bg-black">
+      <Navbar />
+      <main className="container mx-auto px-4 py-8">
+        <Photo />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Articles />
+        <Contact />
+      </main>
+    </div>
+  );
 }
